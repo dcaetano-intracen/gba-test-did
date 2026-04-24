@@ -1,16 +1,25 @@
- {                                                                                                                                 
-    "@context": ["https://www.w3.org/ns/did/v1"],                                                                                   
+{                                                                                                                                 
+    "@context": [                                                                                                                   
+      "https://www.w3.org/ns/did/v1",                                                                                               
+      "https://w3id.org/security/suites/jws-2020/v1"                                                                                
+    ],                                                                                                                              
     "id": "did:web:<your-username>.github.io:gba-test-did",                                                                         
-    "verificationMethod": [{                                                                                                        
-      "id": "did:web:<your-username>.github.io:gba-test-did#owner",
-      "type": "JsonWebKey2020",                                                                                                     
-      "controller": "did:web:<your-username>.github.io:gba-test-did",
-      "publicKeyJwk": {                                                                                                             
-        "kty": "OKP",
-        "crv": "Ed25519",                                                                                                           
-        "x": "11qYAYKxCrfVS_7TyWQHOg7hcvPapiMlrwIaaPcHURo"
+    "verificationMethod": [                                                                                                         
+      {                                                                                                                             
+        "id": "did:web:<your-username>.github.io:gba-test-did#owner",                                                               
+        "type": "JsonWebKey2020",                                                                                                   
+        "controller": "did:web:<your-username>.github.io:gba-test-did",                                                             
+        "publicKeyJwk": {                                                                                                           
+          "kty": "OKP",                                                                                                             
+          "crv": "Ed25519",                                                                                                         
+          "x": "xOyRdHqUflmnSUVevs60t-nDmQlQVAjMG20nXoky0RI"                                                                        
+        }                                                                                                                           
       }                                                                                                                             
-    }],
-    "authentication": ["did:web:<your-username>.github.io:gba-test-did#owner"],                                                     
-    "assertionMethod": ["did:web:<your-username>.github.io:gba-test-did#owner"]
+    ],                                                                                                                              
+    "authentication": [                                                                                                             
+      "did:web:<your-username>.github.io:gba-test-did#owner"                                                                        
+    ],                                                                                                                              
+    "assertionMethod": [                                                                                                            
+      "did:web:<your-username>.github.io:gba-test-did#owner"                                                                        
+    ]                                                                                                                               
   }
